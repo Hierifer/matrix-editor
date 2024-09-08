@@ -1,8 +1,10 @@
 import SplitPane from 'react-split-pane'
 import React from 'react'
 
+// @ts-expect-error any
 const Editor = ({children}) => {
     return (
+        //@ts-expect-error sp
         <SplitPane
             split="vertical"
             minSize={50}
